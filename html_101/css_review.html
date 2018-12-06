@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <style>
+        .adamsDiv{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            padding: 100px;
+        }
+        /* if you have a position absolute, make sure its direct parent is a position relative */
+        /* it will look for the next highest relative to compare for absolute positioning */
+        .otherDiv{
+            position:absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+        #one{
+            top: 40px;
+            left: 40px;
+            background-color: red;
+        }
+        #two{
+            top: 80px;
+            left: 40px;
+            background-color: red;
+        }
+        #three{
+            top: 40px;
+            left: 80px;
+            background-color: red;
+        }
+        .text{
+            float: left;
+            height: 200px;
+        }
+        .container {
+            height: 100px;
+        }
+        .left{
+            width: 15%;
+            display: inline-block;
+            
+        }
+        .right {
+            width: 75%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">I am a div</div>
+        <div class="right">I am another div</div>
+    </div>
+
+
+
+
+<!-- inline styling will override head style tags most of the time -->
+    <div class="adamsDiv">
+        <div id="one"class="otherDiv"></div>
+        <div id="two" class="otherDiv"></div>
+        <div id="three" class="otherDiv"></div>
+    </div>
+
+</body>
+</html>

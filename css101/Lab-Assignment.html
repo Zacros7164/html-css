@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .wheel{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            z-index: 3;
+        }
+        #wheel1{
+            position: absolute;
+            top: 250px;
+            left: 225px;
+        }
+        #wheel2{
+            position: absolute;
+            top: 250px;
+            left: 445px;
+        }
+        .bed{
+            background-color: blue;
+            width: 450px;
+            height: 100px;
+            position: absolute;
+            top: 185px;
+            left: 160px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 25px;
+            z-index: 5;
+        }
+        .cab{
+            background-color: blue;
+            height: 150px;
+            width: 185px;
+            position: absolute;
+            top: 90px;
+            left: 350px;
+            border-top-right-radius: 65%;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 35%;
+            z-index: 1;
+        }
+        .window{
+            background-color: white;
+            height: 100px;
+            width: 115px;
+            position: absolute;
+            top: 112px;
+            left: 380px;
+            border-top-right-radius: 65%;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 35%;
+            z-index: 2;
+        }
+        .rim{
+            background-color: grey;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            z-index: 4;
+        }
+        #rim1{
+            position: absolute;
+            top: 262px;
+            left: 239px;
+        }
+        #rim2{
+            position: absolute;
+            top: 262px;
+            left: 457px;
+        }
+        .bumper{
+            background-color: black;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 260px;
+            left: 150px;
+            border-radius: 25px;
+            z-index: 6;
+        }
+        .grill{
+            background-color: silver;
+            width: 18px;
+            height: 5px;
+            border-bottom-left-radius: 30%;
+            border-top-left-radius: 30%;
+            z-index: 7;
+
+        }
+        .grillx{
+            position: absolute;
+            left: 592px;
+        }
+
+        #grill1{
+            top: 234px;
+        }
+        #grill2{
+            top: 245px;
+        }
+        #grill3{
+            top:256px;
+        }
+        .door{
+            z-index: 8;
+            border: solid 2px black;
+            width: 115px;
+            height: 140px;
+            position: absolute;
+            top: 111px;
+            left: 380px;
+            border-top-right-radius: 54%;
+            border-top-left-radius: 45px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .side-mirror {
+            width: 15px;
+            height: 15px;
+            border-radius: 25%;
+            box-shadow: 4px 0px 0 0 lightgray;
+            background-color: grey;
+            z-index: 9;
+            position: absolute;
+            top: 175px;
+            left: 489px;
+        }
+    </style>
+</head>
+<body>
+    <div class="car-box">
+        <div class="wheel" id="wheel1"></div>
+        <div class="wheel" id="wheel2"></div>
+        <div class="bed"></div>
+        <div class="cab"></div>
+        <div class="window"></div>
+        <div class="rim" id="rim1"></div>
+        <div class="rim" id="rim2"></div>
+        <div class="bumper"></div>
+        <div class="grill grillx" id="grill1"></div>
+        <div class="grill grillx" id="grill2"></div>
+        <div class="grill grillx" id="grill3"></div>
+        <div class="door"></div>
+        <div class="side-mirror"></div>
+    </div>
+
+</body>
+</html>

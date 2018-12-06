@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>U.S. National Parks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #top-section {
+            border: double 5px red;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: gray;
+
+        }
+        #middle-section{
+            
+            background-color: aquamarine;
+            display: flex;
+        }
+        #header{
+            border: solid 5px black;
+            margin: 15px;
+            background-color: blue;
+        }
+
+        #column1{
+            flex-direction: column;
+            border: solid black 2px;
+            width: 15%;
+        }
+        #column2{
+            flex-direction: column;
+            border: solid black 2px;
+            width: 85%;
+        }
+        .preview{
+            width: 100%;
+        }
+        .mainImage{
+            width: 100%;
+            flex-grow: 10%;
+        }
+    </style>
+<body>
+    <div id="top-section">
+        <div id='header'><h1>U.S. National Parks I want to visit</h1></div>
+    </div>
+
+    <div id='middle-section'>                                                   
+       <div id="column1">
+            <img class="preview" src="./Arches_National_Park.jpg" onclick="mainImage.src = this.src" />
+            <p class="description">Arches National Park, Utah</p>
+            <img class="preview" src="./Badlands_National_Park.jpg" onclick="mainImage.src = this.src" />
+            <p class="description"></p>Badlands National Park, South Dakota</p>
+            <img class="preview" src="./Dry_Tortugas_National_Park.jpg" onclick="mainImage.src = this.src" />
+            <p class="description"></p>Dry Tortugas National Park, Florida</p>
+            <img class="preview" src="./Glacier_National_Park.jpg" onclick="mainImage.src = this.src" />
+            <p class="description"></p>Glacier National Park, Montana</p>
+            <img class="preview" src="./Gates_of_the_Arctic.jpg" onclick="mainImage.src = this.src" />
+            <p class="description"></p>Gates of the Arctic National PArk, Alaska</p>
+            <img class="preview" src="./Hawaii_Volcanoes_National_Park.jpg" onclick="mainImage.src = this.src" />
+            <p class="description"></p>Hawaii Volcanoes National Park, Hawaii</p>
+        </div>
+        <div id="column2">
+            <img class="mainImage" name ="mainImage" src="./Glacier_National_Park.jpg" />
+        </div>
+    </div>
+
+    <div  id="bottom-section">
+        bottom section
+    </div>
+</body>
+</html>
